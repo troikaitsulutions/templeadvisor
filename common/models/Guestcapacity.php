@@ -1,0 +1,102 @@
+<?php
+
+/**
+ * This is the model class for table "{{page}}".
+ *
+ * The followings are the available columns in table '{{page}}':
+ * @property string $page_id
+ * @property string $name
+ * @property string $title
+ * @property string $description
+ * @property string $parent
+ * @property string $layout
+ * @property string $slug
+ * @property integer $lang
+ */
+class Guestcapacity extends CActiveRecord
+{
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @return Page the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return '{{guestcapacity}}';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			
+			array('uid, minguest, maxguest', 'required'),
+			array('maxadult, maxchildren, maxbabies, discountchildren, discountbabies', 'numerical', 'integerOnly'=>true),
+			
+			// The following rule is used by search().
+			// Please remove those attributes that should not be searched.
+			array('id', 'safe', 'on'=>'search'),
+		);
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		 return array(                    
+                    'language' => array(self::BELONGS_TO, 'Language', 'lang'),
+                ); 
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'id' => t('ID'),
+			'minguest' => t('Total Min.Guest'),
+			'maxguest' => t('Total Max.Guest'),
+			'maxadult' => t('Max.Adults'),
+			'maxchildren' => t('Max.Children'),
+			'maxbabies' => t('Max.Babies'),
+			'discountchildren' => t('Discount Children(%)'),
+			'discountbabies' => t('Discount Babies(%)'),
+			
+		);
+	}
+
+	/**
+	 * Retrieves a list of models based on the current search/filter conditions.
+	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 */
+	public static function GetCommission($id){    
+		                       
+               
+             $models=self::model()->find(array(
+		    'condition'=>'uid=:id',
+		    'params'=>array(':id'=>$id)));
+			
+			$items = t("None");
+			
+			if(count($models)>0){                
+                        $items = t($models->commission);  
+	    	} 
+			return $items;
+        }
+        
+}

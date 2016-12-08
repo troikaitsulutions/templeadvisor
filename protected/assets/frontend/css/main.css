@@ -1,0 +1,100 @@
+/*------------------------------------*\
+    #GLOBAL
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #KOALAPSE
+\*------------------------------------*/
+
+/**
+* Default styles
+*/
+
+.koalapse { width:91.6%; }
+.koalapse h3 img{ vertical-align: middle !important;
+margin-right: 10px;
+}
+.koalapse-layout { width: 89.6% !important; }
+.koalapse ul { margin:0px !important; padding:0px !important; background:#FFFFFF !important; }
+
+.koalapse ul li {
+color: #790220 !important;
+font-size: 85% !important;
+line-height: 24px !important;
+padding: 10px 0 10px 10px !important;
+border-bottom: 1px solid #ececec !important;
+background: url(../images/region-arrow.png) 0 18px no-repeat !important;
+margin: 0px 20px 0px 0px !important; }
+
+.koalapse ul a { 
+color: #790220 !important;
+}
+
+.koalapse ul a:hover { text-decoration:underline; }
+
+.koalapse__title {
+    margin-bottom: 0;
+    position: relative;
+}
+.koalapse__title:after {
+    content: "+";
+    color:#790202 !important;
+    font-size: 1.5em;
+    line-height: 1;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.koalapse__title[aria-expanded="true"]:after {
+    content:'-';
+}
+.koalapse__title:first-child {
+    border-top: 0;
+}
+.koalapse__title {
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    text-align: left !important;
+    color:#790202 !important;
+	border:0px;
+    border-top:1px solid #eee !important;
+	background-color:#FFFFFF !important;
+    padding: 1em !important;
+    display: block !important;
+    width: 100% !important;
+    cursor: pointer !important;
+}
+.koalapse__title:hover,
+.koalapse__title:focus {
+    background-color:#ffa12d !important;
+	color:#790202 !important;
+}
+.koalapse__content {
+    background-color:#FFF !important;
+    padding: 0.25em 1em !important;
+	width: 98%;
+}
+.koalapse__content + .koalapse__title {
+    margin-top: 0px !important;
+}
+
+.koalapse h2 { font-size: 0.75rem !important;
+font-weight: 700 !important;
+text-transform: uppercase !important;
+text-align: left !important;
+color: #790202 !important;
+border: 0px;
+border-top: 1px solid #eee !important;
+background-color: #FFFFFF !important;
+padding: 1em !important;
+display: block !important;
+width: 100% !important;
+cursor: pointer !important; }
+.koalapse h2 a { color: #790202 !important; }
+.koalapse h2:hover,
+.koalapse h2:focus {
+    text-decoration:underline !important;
+	color: #790202 !important;
+}

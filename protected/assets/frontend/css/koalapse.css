@@ -1,0 +1,7 @@
+/*------------------------------------*\
+    #KOALAPSE
+    THIS IS THE ONLY CSS REQUIRED :)
+\*------------------------------------*/
+.koalapse__content[aria-hidden="true"] {
+    display: none;
+}

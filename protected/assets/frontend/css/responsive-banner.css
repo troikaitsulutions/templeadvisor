@@ -1,0 +1,228 @@
+
+
+img {
+	width:auto;
+	max-width: 100%;		
+}
+
+
+.bannerSlider-section {
+	position:relative;
+}
+
+
+
+@media (max-width: 768px) { 
+
+
+
+#branding{
+	min-height: inherit;
+	clear:both;
+}
+
+#sticky_navigation {
+	height: auto;
+	min-height: inherit;
+}
+
+#sticky_navigation .grid_5 {
+	margin-top:8px;
+}
+
+nav select {
+	margin: 10% 1% 0;
+	height:auto;
+	padding:5px 10px;
+}
+.temple_image {
+	width: 100%;
+	text-align:center;
+	top: 26%;
+	left:0;
+}
+
+.grid_16c {
+	/*top:38%;*/
+}
+
+#banner_middle_content ul li img.temples {
+	width: 12%;
+}
+
+#banner_middle_content ul li img.plan_trip {
+	width: 20%;
+}
+
+#banner_middle_content ul li img.articles_reviews {
+	width: 30%;
+}
+
+
+.grid_16c li {
+	margin-bottom:40px;
+}
+.temple_image img {
+	margin: 0 auto;
+	width: 33%;
+}
+
+.left_menu_01, .left_menu_02, .left_menu_03, .right_menu_01, .right_menu_02, .right_menu_03 {
+	float:left;
+}	
+
+.grid_16c ul, .grid_16c p {
+	margin-bottom: 0;
+}
+
+.left_menu_02{
+    margin: 0 20%;
+}
+.right_menu_02  {
+    margin:0 19% 0 17%;
+}
+.right_menu_01, .right_menu_02 { margin-bottom:10px}
+
+.grid_16c li {
+	margin-bottom:20px;
+}
+
+
+.left_menu_02 {margin: 0 20%;}
+.right_menu_01 {width: 27%;}
+
+
+
+.left_menu {
+	top: 5%;
+	left: 10%;
+	width: 90%;
+}
+.right_menu {
+    bottom: 0;
+	top: inherit;
+	right: inherit;
+	left:5%;
+	width: 90%;
+}	
+.left_menu h1, .right_menu h1 {
+	font-size: 20px;
+}	
+#banner_middle_content li a {
+	font-size: 25px;
+}
+
+#banner_middle_content img {
+width: auto;
+}
+}
+
+
+@media (max-width: 640px) { 
+#banner_middle_content li a {
+	 font-size: 20px;
+}
+.grid_16c li {
+	margin-bottom:20px;
+}
+
+.left_menu_02 {
+    margin: 0 15%;
+}
+.right_menu_02 {
+   margin: 0 15%;
+
+}
+
+}
+
+@media (max-width: 480px) { 
+	
+
+.temple_image img {
+    margin: 0 auto;
+    width: 50%;
+}
+.left_menu_02 {
+    margin: 0 7%;
+}
+.right_menu_02 {
+   margin: 0 15%;
+}
+#banner_middle_content ul li img.temples {
+	width: 20%;
+}
+#banner_middle_content ul li img.plan_trip {
+	width: 35%;
+}
+
+#banner_middle_content ul li img.articles_reviews {
+	width: 44%;
+}
+}
+
+
+
+@media (max-width: 360px) { 
+nav select {
+	margin: 7% 1% 0;
+	height:auto;
+	padding:3px 5px;
+}
+.temple_image img {
+    width: 80%;
+}
+.left_menu_text a {
+	font-size: 14px;
+}
+.left_menu_02{
+    margin: 0 2%;
+}
+.right_menu_02 {
+    margin: 0 12%;
+}
+	
+
+.left_menu {
+	 left: 3%;
+	 width: 96%;	
+}
+.right_menu {
+    left: 3%;
+    width: 96%;
+}
+}
+
+@media (max-width: 320px) { 
+.left_menu_02 {
+    margin: 0 1%;
+	width: 125px;
+	margin-left: 8px;
+
+}
+.right_menu_02 {
+   margin: 0 12%;
+
+}
+.left_menu_01 img {
+	width: 70%;
+}
+.play_controls {
+	margin-left: 8px;
+}
+#banner_middle_content ul li img.temples {
+	width: 30%;
+}
+#banner_middle_content ul li img.plan_trip {
+	width: 47%;
+}
+
+#banner_middle_content ul li img.articles_reviews {
+	width: 70%;
+}
+#toolbar ul .share, #toolbar ul .rss {
+	display:inline-block;
+}
+
+}
+
