@@ -1,0 +1,17 @@
+.hb-day.hb-day-name{
+	color: #d80000;
+}
+
+.hb-day.hb-day-active{
+	color: #fff;
+	background-color: #d80000;
+}
+
+.hb-day.hb-day-active:hover{
+	background-color: #f21a1a;
+}
+
+.hb-day.hb-day-selected, .hb-day.hb-day-selected:hover{
+	background-color: #ff3333;
+}
+.hb-loading:before{ content: url("../images/iconLoadingRed.gif"); }

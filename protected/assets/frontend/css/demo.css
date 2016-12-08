@@ -1,0 +1,13 @@
+
+
+.lt-ie8 .elastislide-list {
+	display: none;
+}
+
+@media screen and (max-width: 690px) {
+	.codrops-demos {
+		float: left;
+		clear: both;
+	}
+}
+

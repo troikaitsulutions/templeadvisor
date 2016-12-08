@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* CSS Document */
+/* Designed by Kim Mercado */
+/* 11OCT2013 */
+
+/*--- Design Ratio: A4 Size (210mm x 297mm Portrait @ 100dpi ---*/
+
+/* Global Defaults */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Typography */
+body,p {
+	font: normal 10pt "Times New Roman", Times, serif;
+	color: #000;
+}
+
+/* Structure */
+#tt_wrapper-main { /* Main content wrapper for all elements */
+	width: 807px; /* intval 827px */
+	height: auto; /* initval 1169px */
+	padding: 10px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	
+	background: #eee url(images/body_bg.jpg) repeat;
+}
+
+#header, #header_pcode { 
+	width: 807px;
+	height: 208px;
+	display: block;
+	overflow: hidden;
+	background:url(images/travel-tuscany-header-bg.jpg ) no-repeat top left;
+	
+	/*background: url(/images/travel-tuscany-header-bg.jpg) no-repeat top left;*/
+}
+
+#header > div#tt_title, #header_pcode > div#tt_title {
+	width: 364px;
+	height: 80px;
+	display: block;
+	position: relative;
+	top: 15px;
+	left: 15px;
+	
+	background: url(images/travel-tuscany-title-bg.png) repeat-x;
+}
+
+div#tt_title > img#tt_logo-img, div#tt_title > div#tt_logo-place-holder {
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+	border: none;
+	float: left;
+	
+	background-color: #CCC;
+}
+
+#tt_title h1, #tt_title h3 {
+	font-family: "Times New Roman", Times, serif;
+	color: #000;
+}
+
+#tt_title h1 {
+	font-size: 24pt;
+	position:absolute; margin-left:100px;
+	margin-top:-65px;
+}
+
+#tt_title h3 {
+	font-size: 13pt;
+		position:absolute; margin-left:105px;
+	padding-top:-20px;
+
+}
+
+#tt_title h1, #tt_title h3 {
+	text-shadow: rgba(10,10,10,0.8) 0px 0px 6px;
+}
+
+#header h1#tt_header-location, #header_pcode h1#tt_header-location {
+	font: normal 18pt Arial, Helvetica, sans-serif;
+	color: #FFF;
+	display: inline;
+	position: relative;
+	top: 20px;
+	left: 14px;
+	padding-top:-30px;
+}
+
+#header h1#tt_header-price, #header_pcode h1#tt_header-price {
+	font: italic 14pt "Times New Roman", Times, serif;
+	color: #FFF;
+	display: block;
+	position: relative;
+	top: 20px;
+	left: 14px;
+	padding-top:-25px;
+}
+
+#footer {
+	width: 807px;
+	height: 65px;
+	display: block;
+	overflow: hidden;
+	
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	
+	background-color: #5A875E;
+}
+
+#footer p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+}
+
+span.tt_is-url:before {
+	content: "";
+	width: 18px;
+	height: 19px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -20px;
+	background-image: url(images/travel-tuscany-globe-icon.png);
+}
+
+span.tt_is-webmail:before {
+	content: "";
+	width: 20px;
+	height: 19px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -20px;
+	background-image: url(images/travel-tuscany-mail-icon.png);
+}
+
+#tt_wrapper-content { /* The main wrapper for all generated content */
+	width: 100%;
+	min-height: 911px;
+	display: block;
+	overflow: hidden;
+	height:auto;
+	
+	margin-top: 10px;
+	
+	background-color: #FFFBD6;
+	
+/*	box-shadow: 0 0 5px 1px rgba(10,10,10,0.5);
+	-moz-box-shadow: 0 0 5px 1px rgba(10,10,10,0.5);
+	-webkit-box-shadow: 0 0 5px 1px rgba(10,10,10,0.5);
+	-o-box-shadow: 0 0 5px 1px rgba(10,10,10,0.5);*/
+}
+
+/* Page 1 Specific Rules */
+
+div#tt_splash-image {
+	width: 807px;
+	height: 500px;
+	display: block;
+	background: #CCC;
+}
+
+h1.tt_intro-heading {
+	padding: 3px 10px;
+	color: #FFF;
+	background-color: #5A875E;
+}
+
+p.tt_intro {
+	margin: 10px;
+	font-size: 12pt;
+	line-height: 13pt;
+	text-align: justify;
+	text-indent: 35px;
+}
+/*--end--*/
+
+/* Page 2 Specific Rules */
+div#tt_p2-left-column { /* wrapper for the left column */
+	width: 25%; /* initval 264px */
+	min-height: 400px;
+	display: inline-block;
+	
+	margin-right: 5px;
+	padding: 10px;
+	float:left;
+}
+
+div#tt_p2-right-column { /* wrapper for the right column */
+	width: 70% !important; /* initval 535px */
+	min-height: 400px;
+	display: inline-block;
+	padding: 10px 10px 10px 0;
+	float: right !important;
+
+}
+
+/* Left Column List Structure */
+#tt_p2-left-column h1 {
+	font: normal 20pt "Times New Roman", Times, serif;
+	
+	
+	background-color: #900;
+	color: #FFF;
+}
+
+#tt_p2-left-column h3, div#tt_p2-right-column h3 {
+	font: normal 14pt "Times New Roman", Times, serif;
+	
+	padding: 1px 0 1px 20px;
+	margin-top: 10px;
+	
+	background-color: #5A875E;
+	color: #fff;
+}
+
+#tt_p2-left-column ul {
+	display: block;
+	margin:0px; padding:0px;
+}
+
+#tt_p2-left-column ul li {
+	list-style: none;
+	margin: 0;
+	padding: 2px 0px 2px 20px;
+	font: normal 10pt "Times New Roman", Times, serif;
+	/*background-color: #E7CF92;*/
+}
+
+#tt_p2-left-column ul li:nth-child(even) {
+	background-color: #E6C47D;
+}
+
+img.icon-set {
+	width: 205px;
+	height: auto;
+	
+	margin: 0 auto;
+	
+	display: block;
+}
+
+/* Right Column Structure */
+div.tt_p2-feature-image {
+	/*width: 525px;
+	height: 379px;*/
+	
+	background-color: #ccc;
+	display: block;
+	
+	margin-bottom: 10px; float:right !important;
+}
+
+div#tt_p2-right-column p {
+	font: normal 12pt "Times New Roman", Times, serif;
+	color: #000;
+	
+	margin: 10px 0;
+}
+
+/*--end--*/
+
+/* Page 3 Specific Rules */
+
+div.tt_gallery-img {
+	width: 156px;
+	height: 92px;
+	margin: 10px 0px 0px 10px;
+	
+	display: inline-block;
+	float: left;
+	
+	background-color: #CCC;
+}
+
+/*--end--*/
+
+/* Property Code Pages - Specific Rules  */
+
+/* Misc */
+.tt_is-hidden { /* Add this class to elements you don't need */
+	width: 0;
+	height: 0;
+	display: none;
+	visibility: hidden;
+}
+
+
+#tt_title h1.tt_property-code {
+	padding-top: 3px;
+}
